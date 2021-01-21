@@ -14,3 +14,6 @@ class UserMessageSerializer(MyHoodSafeSerializerMixin, serializers.HyperlinkedMo
             'text',
             'date',
         )
+        read_only_fields = (
+            'from_user',
+        )
